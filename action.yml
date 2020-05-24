@@ -11,7 +11,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  pre-entrypoint: 'echo "::add-matcher::/problem-matcher.json"'
   args:
     - ${{ inputs.rules_file }}
     - ${{ inputs.src_paths }}
