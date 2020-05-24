@@ -10,7 +10,7 @@ inputs:
     required: false
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'action/Dockerfile'
   args:
     - ${{ inputs.rules_file }}
     - ${{ inputs.src_paths }}
