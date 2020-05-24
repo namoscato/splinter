@@ -1,3 +1,4 @@
 FROM bash:5
-COPY splinter /splinter
+COPY .github/problem-matcher.json /
+COPY splinter /
 ENTRYPOINT ["/splinter"]
