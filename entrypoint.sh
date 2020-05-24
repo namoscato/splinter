@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-echo "::add-matcher::/problem-matcher.json"
+cp /problem-matcher.json $HOME
+echo "::add-matcher::$HOME/problem-matcher.json"
 ./splinter "$@"
